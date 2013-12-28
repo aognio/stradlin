@@ -2,7 +2,7 @@
 
 function serve_json($doc, $options = 0, $cbname = 'callback') {
   set_content_type('application/json');
-  $doc = json_encode($doc, $options);
+  $doc = str_replace("\\", "", json_encode($doc, $options));
   $callback = null;
   if (array_key_exists('HTTP_JSONP_CALLBACK', $_SERVER) && strlen($_SERVER['HTTP_JSONP_CALLBACK'])>0) {
     $callback = $_SERVER['HTTP_JSONP_CALLBACK'];
