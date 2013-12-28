@@ -138,6 +138,10 @@ function render_template($template, $context = null, $template_dir='templates') 
   include_template($template, $template_dir);
 }
 
+function get_request_body() {
+  return @file_get_contents('php://input');
+}
+
 function phpinfo_to_file($path) {
   ob_start();
   phpinfo();
