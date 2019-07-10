@@ -36,7 +36,7 @@ In order to have the clean URLs working please use the provided .htaccess file f
 By the way, PHP 5.3+ is going to be needed to run this code since it uses lambda functions and closures.
 
 <p align="center">
-  <img src="http://stradlin.bitzeppelin.com/images/izzy-and-axl.jpg" alt="Izzy Stradlin' and Axl Rose" />
+  <img src="https://i.imgur.com/4WbcYoF.jpg" alt="Izzy Stradlin' and Axl Rose" />
 </p>
 
 Speaking of controllers, this microframework should have been called 'Axl', that's a real control freak! :)
