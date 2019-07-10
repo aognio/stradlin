@@ -14,6 +14,7 @@ function serve_json($doc, $options = 0, $cbname = 'callback') {
   } else {
     echo $doc;
   }
+  exit();
 }
 
 function get_request_uri() {
