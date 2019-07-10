@@ -21,6 +21,8 @@ function get_request_uri() {
     return  $_SERVER['PATH_INFO'];
   } elseif (array_key_exists('REDIRECT_URL', $_SERVER)) {
     return $_SERVER['REDIRECT_URL'];
+  } elseif (array_key_exists('REQUEST_URI', $_SERVER)) {
+    return $_SERVER['REQUEST_URI'];
   } else {
     return '/';
   }
